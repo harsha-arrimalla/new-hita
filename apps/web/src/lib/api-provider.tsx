@@ -10,7 +10,7 @@ export function APIProvider({ children }: { children: ReactNode }) {
     () => createHitaAPI(process.env.NEXT_PUBLIC_API_URL),
     []
   );
-  return <APIContext value={api}>{children}</APIContext>;
+  return <APIContext.Provider value={api}>{children}</APIContext.Provider>;
 }
 
 export function useAPI(): HitaAPI {

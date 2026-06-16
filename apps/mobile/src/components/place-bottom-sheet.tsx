@@ -336,7 +336,7 @@ export function PlaceBottomSheet({
               )}
 
               {/* Things to do */}
-              {details?.insights.thingsToDo?.length > 0 && (
+              {details?.insights?.thingsToDo && details.insights.thingsToDo.length > 0 && (
                 <View style={styles.section}>
                   <Text style={styles.sectionTitle}>Things to do</Text>
                   {details.insights.thingsToDo.map((item, i) => (

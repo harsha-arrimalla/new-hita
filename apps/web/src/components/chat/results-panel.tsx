@@ -311,7 +311,7 @@ function PlaceDetailView({
             )}
 
             {/* Things to do */}
-            {details?.insights.thingsToDo?.length > 0 && (
+            {details?.insights?.thingsToDo && details.insights.thingsToDo.length > 0 && (
               <div>
                 <h3 className="font-[family-name:var(--font-display)] text-[17px] text-ink mb-2">
                   Things to do
